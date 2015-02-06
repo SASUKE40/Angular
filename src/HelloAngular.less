@@ -1,0 +1,26 @@
+@w:100px;
+@h:100px;
+body{
+
+}
+.box{
+  width: @w;
+  height: @h;
+  .solid();
+}
+.solid(@solid:10px){
+  border: solid @solid pink;
+}
+.triangle-box{
+  .triangle(top);
+}
+.triangle(@_,@w:10px,@c:pink){
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.triangle(top,@w:10px,@c:pink){
+  border-width: 50px;
+  border-color: transparent transparent @c transparent;
+  border-style: dashed dashed solid dashed;
+}

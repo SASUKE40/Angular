@@ -1,0 +1,14 @@
+.box {
+  width: 100px;
+  height: 100px;
+  border: solid 10px pink;
+}
+.triangle-box {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 50px;
+  border-color: transparent transparent pink transparent;
+  border-style: dashed dashed solid dashed;
+}
+/*# sourceMappingURL=HelloAngular.css.map */
